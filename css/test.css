@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
 
-
+/* home */
 .image-container .text-container h2 {
   font-family: 'Roboto', sans-serif;
 }
@@ -42,18 +42,17 @@
       margin-bottom: 0;
     }
 
-header {
-  background-color: black
-}
+    header nav ul {
+      /* CSS 속성 */
+      background-color: black;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
 
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
 
 nav li {
   text-align: center;
@@ -81,10 +80,16 @@ nav a:hover {
   height: 100%;
 }
 
+#about {
+  background-color: rgb(141, 189, 191);
+  padding: 5px;
+}
+
 h1 {
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
 
 h1 img {
@@ -99,7 +104,7 @@ h1 img {
   padding: 10px;
   display: flex;
   align-items: center;
-   font-family: 'Nanum Gothic', sans-serif;
+   /* font-family: 'Nanum Gothic', sans-serif; */
 }
 .table-cell img {
   width: 100px;
@@ -107,12 +112,11 @@ h1 img {
 }
 
 #skills {
+  background-color: rgb(230,176,50);
   text-align: center;
-  padding: 20px;
+  padding: 5px;
+  padding-bottom: 35px;
 }
-
-
-
 
 #skills .categories {
   display: flex;
@@ -120,7 +124,12 @@ h1 img {
 }
 
 #skills .category {
-  flex-basis: calc(100% / 3);
+  flex-basis: calc(100% / 3 - 150px);
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.2);
+  margin: 0 80px;
+  padding-top: 10px;
 }
 
 #skills .category img {
@@ -149,28 +158,108 @@ h1 img {
    }
 
 
+#archiving {
+  background-color: rgb(181,66,71);
+  padding: 5px;
+  padding-bottom: 35px;
+}
+
+#archiving h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+#archiving h2 img {
+    margin-right: 10px;
+  }
+
+#archiving p a {
+    color: #4E9CAF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+#archiving p a:hover {
+    color: #166281;
+  }
+
+#archiving ul {
+    text-align: left;
+    padding-left: 20px;
+    margin-bottom: 0;
+  }
+
+#archiving li {
+    list-style-type: disc;
+    margin-bottom: 10px;
+  }
+
+#archiving .container {
+  flex-basis: calc(100% / 3 - 150px);
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.2);
+  margin: 0 80px;
+  padding-top: 10px;
+}
 
 
 
-   #contact h1 {
+
+
+
+
+
+
+
+
+
+
+
+
+#projects{
+  background-color: rgb(234,197,189);
+  text-align: center;
+  padding: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#contact{
+  padding: 5px;
+}
+#contact h1 {
      margin-bottom: 20px;
      padding: 10px;
    }
 
-   #contact form {
+#contact form {
      display: flex;
      flex-direction: column;
      align-items: center;
    }
 
-   #contact label {
+#contact label {
      display: block;
      font-weight: bold;
      margin-top: 10px;
    }
 
-   #contact input,
-   #contact textarea {
+#contact input,
+#contact textarea {
      width: 300px;
      padding: 10px;
      margin-top: 5px;
@@ -178,11 +267,11 @@ h1 img {
      border-radius: 5px;
    }
 
-   #contact textarea {
+#contact textarea {
      height: 150px;
    }
 
-   #contact button {
+#contact button {
      margin-top: 10px;
      padding: 10px 20px;
      background-color: #4CAF50;
