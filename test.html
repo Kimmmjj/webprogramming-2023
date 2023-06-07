@@ -4,6 +4,8 @@
   <meta charset="utf-8">
   <title>My Portfolio</title>
   <link rel="stylesheet" href="./css/test.css">
+  <script src="./js/test.js" defer></script>
+
 
 <body>
   <header>
@@ -128,11 +130,32 @@
 </div>
 
 <div id="projects">
-  <h1><img src="./css/image/link.png" alt=""width="25" height="25">PROJECTS</h1>
-
+  <h1><img src="./css/image/link.png" alt="" width="25" height="25">PROJECTS</h1>
+  <div class="category">
+    <h2 style="margin-top: 0;">My Portfolio</h2>
+    <div class="grid-container">
+      <div class="image">
+        <img src="./css/image/page1.png" alt="" width="250" height="250">
+        <button class="prev" onclick="changeImage(0)">&lt;</button>
+        <button class="next" onclick="changeImage(1)">&gt;</button>
+      </div>
+      <div class="text">
+          <p>자신의 능력을 보여주고, 자신의 작업을 보관하고자 하는 사람들을 위한 포토폴리오 사이트 입니다.</p>
+          <p>포토폴리오 사이트를 통해 자신만의 브랜드를 만들고, 잠재 고객이나 고용주에게 어필할 수 있습니다.</p>
+          <hr>
+          학부 시절 수강한 수업의 과제로 HTML, CSS, JavaScrpit를 이용해 제작하였습니다.
+      </div>
+    </div>
+  </div>
 </div>
+
+
+
 <div id="contact">
   <h1><img src="./css/image/link.png" alt=""width="25" height="25">CONTACT</h1>
+  <div class="category">
+
+
   <form action="#" method="POST">
     <label for="name">Name</label>
     <input type="text" id="name" name="name">
@@ -142,6 +165,7 @@
     <textarea id="message" name="message"></textarea><p></p>
     <button type="submit">Send</button>
   </form>
+</div>
 </div>
 </body>
 </html>
