@@ -155,6 +155,8 @@ h1 img {
   margin-right: 10px;
 }
 
+
+
 #skills {
   background-color: rgb(230,176,50);
   text-align: center;
@@ -206,6 +208,7 @@ h1 img {
    }
 
 
+
 #archiving {
   background-color: rgb(181,66,71);
   padding: 5px;
@@ -247,7 +250,6 @@ h1 img {
   color: #224466;
   text-decoration: underline;
 }
-
 
 #archiving .category {
   background-color: white;
@@ -315,11 +317,6 @@ h1 img {
 #projects .image .next {
   right: 0;
 }
-
-
-
-
-
 
 
 

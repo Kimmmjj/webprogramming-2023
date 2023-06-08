@@ -1,4 +1,3 @@
-
   function changeImage(direction) {
     const image = document.querySelector("#projects .category .image img");
     const images = ["./css/image/page1.png", "./css/image/page2.png", "./css/image/page3.png","./css/image/page4.png","./css/image/page5.png"];
@@ -21,6 +20,7 @@
 
     image.setAttribute("src", images[nextIndex]);
   }
+
 
 
 
